@@ -21,6 +21,13 @@ cd sample
 node ../src/main.js sample.md sample.docx
 ````
 
+Если вы хотите использовать конвертер в контейнере, необходимо выполнить
+следующие команды:
+```
+docker build -t proceedings-md .
+./run-container.sh proceedings-md sample/sample.md sample/sample.docx
+```
+
 ## Notes
 
 Скрипт несколько сырой. Ошибки могут быть нечитаемыми. Некоторые версии Microsoft Word
