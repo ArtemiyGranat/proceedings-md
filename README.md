@@ -8,17 +8,16 @@
 
 ```bash
 git clone https://github.com/ispras/proceedings-md
-cd proceedings
+cd proceedings-md
 npm install
 sudo apt-get install pandoc
 ```
 
-Файл `sample.md` содержит стандартный шаблон статьи для Трудов ИСП РАН,
+Файл `sample/sample.md` содержит стандартный шаблон статьи для Трудов ИСП РАН,
 представленный в `.md`-формате. Скрипт `src/main.js` выполняет конвертацию.
 
 ```
-cd sample
-node ../src/main.js sample.md sample.docx
+node src/main.js sample/sample.md sample/sample.docx
 ````
 
 Если вы хотите использовать конвертер в контейнере, необходимо выполнить
